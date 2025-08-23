@@ -1,0 +1,26 @@
+print("selam ben adall abone ol yoksa seni öldürürüm")
+meme_dict = {
+            "CRINGE": "Garip ya da utandırıcı bir şey",
+            "LOL": "Komik bir şeye verilen cevap",
+            "ROFL": "bir şakaya karşılık cevap",
+            "SHEESH":  "onaylamamak",
+            "CREEPY":  "korkunç",
+            "AGGRO":  "agresifleşmek/sinirlenmek"
+            }
+
+word = input("Anlamadığınız bir kelime yazın (hepsini büyük harflerle yazın!): ")
+if word in meme_dict.keys():
+    print("eşleşti")
+else:
+     print("böyle bir kelime yok")
+    print("While Şeklinde")
+sayac=0
+while sayac<5:
+    sayac=sayac+1
+    print(sayac,".Kelime")
+    word = input("Anlamadığınız bir kelime yazın (hepsini büyük harflerle yazın!): ")
+    
+    if word in meme_dict.keys():
+        print(meme_dict[word])
+    else:
+        print("sözlükte bu kelime yok")
